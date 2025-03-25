@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-1.0, initial-scale=1.0" />
+
+	<title>Your Sweet Spot Life</title>
+	<link href="/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="mobile_styles.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="/assets/yss_logo.png" rel="icon" type="image/x-icon" />
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
+	</script><script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<!--LANDING PAGE WITH LOGO-->
+<div class="hero-page" id="hero-page">
+<h1 class="logo-text">Your <span class="sweet-brown">Sweet</span> Spot Life</h1>
+<h2 class="logo-desc" id="logo-desc">THE STORY OF LIFE AND THE LIFE BEHIND THE STORY</h2>
+<!-- a class="home-link" href="index.html"><img class="logo" id="logo" src="/assets/yss_logo.png" /> </a-->
+<img class="logo" src="/assets/yss_logo.png" />
+
+<h3>Welcome to Your Sweet Spot Life!
+<br>We walk you through the creation process from start to finish.
+<br>From idea to reality and beyond, we bring local creativity to life.
+<br>Now push the buttons below and see what’s inside!</h3>
+
+<!-- suky commented -->
+<!--TEXT THAT SPLITS LANDING PAGE AND NEXT SECTION-->
+<style type="text/css">
+.split{
+    margin-top: 5%;
+    text-align: center;
+    justify-content: center;
+    height: auto;
+    color: #5e5e5e;
+}
+/* .contributor_button {
+    position: relative;
+    margin: 2rem 1rem 4rem 2rem;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+}
+
+.contributor_button img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: fill;
+    transition: all 0.5s;
+}
+
+
+.contributor_button img:hover
+{
+    transform: scale(1.2);
+}
+
+.contributor_button span {
+    font-family: 'Roboto';
+    font-size: 1.5em;
+    color: #7a7a7a;
+    font-weight: 800;
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.contributor_button:hover span {
+    opacity: 1;
+} */
+
+.videoPopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Adjust the width of the video popup as needed */
+    max-width: 800px; /* Set a maximum width for the video popup to prevent it from becoming too large */
+    height: auto; /* Allow the height of the video popup to adjust based on its content */
+    max-height: 80%; /* Set a maximum height for the video popup to maintain aspect ratio */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    border-radius: 25px;
+}
+  
+.videoContainer {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    max-width: 100%; /* Ensure the video container does not exceed the width of its parent */
+    max-height: 100%; /* Ensure the video container does not exceed the height of its parent */
+    overflow: hidden; /* Hide any overflow content beyond the video container */
+    border-radius: 25px;
+}
+
+.videoContainer video {
+    width: 100%; /* Ensure the video takes up 100% of the width of the video container */
+    height: 100%; /* Ensure the video takes up 100% of the height of the video container */
+    object-fit: contain; /* Maintain aspect ratio and fit the video within the container */
+}
+
+
+.closeVideoBtn {
+position: absolute;
+top: 10px;
+right: 10px;
+cursor: pointer;
+}
+</style>
+<!-- ROAD MAP PROJECT ICON SECTION--><!--<div class = "button-scroller">-->
+<!-- <div class = "button-scroller-content">-->
+<!-- <button class="circle-button" id = "about-us-button">
+<img src = "/assets/about-us-logo.png"></button>-->
+<!-- <button class="circle-button" id = "yss-live-button"><img src = "/assets/yss-live.png">
+</button>--><!-- <button class="circle-button" id = "meta-narrative-button">
+<img src ="/assets/meta-nrtive.png"></button>-->
+<!-- <button class="circle-button" id = "community-development-button">
+<img src="/assets/com_dev.png"></button>-->
+<!-- <button class="circle-button" id = "start-button">
+<img src="/assets/start-logo.png"></button>--><!--&lt;!&ndash;        
+<button class="circle-button" id = "marketplace-button">
+<img src="/assets/marketplace-logo.png"></button>&ndash;&gt;-->
+<!-- <button class="circle-button" id = "faq-button">
+<img src="/assets/contact-icon.png"></button>-->
+<!-- <button class="circle-button" id = "contributor-button">
+<img src="/assets/contributers.png">
+</button>--><!-- </div>--><!--</div>-->
+<div class="button-scroller">
+<!-- About Us, S.T.A.R.T Bridge, The Reservoir, Stream Weaver, Milky Mouse, Portal Terms, Portal Post, Contributors, FAQ -->
+<div class="button-scroller-content">
+    <button class="circle-button" id="about-us-button"><img src="/assets/about-us-logo.png" /> <span>About Us</span></button>
+    <button class="circle-button" id="start-button"><img src="/assets/S.T.A.R.T. Bridge.png" /> <span>S.T.A.R.T</span></button>
+    <button class="circle-button" id="reservoir-button"><img src="/assets/The Reservoir.png" /> <span>The Reservoir</span></button>
+    <button class="circle-button" id="streamweaver-button"><img src="/assets/04 Stream Weaver.png" /> <span>Stream Weaver</span></button>
+    <button class="circle-button" id="yss-live-button"><img src="/assets/05 Milky.png" /> <span>Milky Mouse</span></button>
+    <button class="circle-button" id="portal-button"><img src="/assets/06 Portal Terms.png" /> <span>Portal Terms</span></button>
+    <button class="circle-button" id="marketplace-button"><img src="/assets/Marketplace.png" /> <span>Portal Post</span></button>
+    <button class="circle-button" id="contributor-button"><img src="/assets/Contributers.jpeg" /> <span>Our Contributors</span></button>
+    <button class="circle-button" id="faq-button"><img src="/assets/faq-contact.jpeg" /> <span>FAQ</span></button></div>
+</div>
+
+<!--ABOUT US ROAD MAP CONTENT-->
+<div class="about-content" id="about-content">
+    <h1 class="project-title">About us</h1>
+    
+    <div class="proj-desc">
+        <h3>We are capturing what it means to be Canadian—one resource, product, story, and experience at a time. 
+        Our system guides you through every stage of transforming local materials into meaningful creations. 
+        Each step offers insight into the innovation, culture, and community that drive our process, turning ideas into impactful realities.</h3>
+    </div>
+    
+    <div class="road-map">
+        <div class="circle-1" id="about-content-1">
+            <h1 class="about-icon-titles">Motivation<br>and Ideology</h1>
+        </div>
+        <img class="path-1" src="/assets/path-left1.png" />
+        <div class="circle-2" id="about-content-2">
+            <h1 class="about-icon-titles">Resource<br>Development</h1>
+        </div>
+        <img class="path-2" src="/assets/path-right1.png" />
+        <div class="circle-3" id="about-content-3">
+            <h1 class="about-icon-titles">Creation and<br>Innovation</h1>
+        </div>
+        <img class="path-3" src="/assets/path-left1.png" />
+        <div class="circle-4" id="about-content-4">
+            <h1 class="about-icon-titles">Community<br>Engagement</h1>
+        </div>
+        <img class="path-4" src="/assets/path-right1.png" />
+        <div class="circle-5" id="about-content-5">
+         <h1 class="about-icon-titles">Market<br>and Sales</h1>
+        </div>
+        <img class="path-5" src="/assets/path-left1.png" />
+        <div class="circle-6" id="about-content-6">
+            <h1 class="about-icon-titles">The<br>Vision</h1>
+        </div>
+    </div>
+    
+    <div class="overlay" id="about-content-1-overlay"></div>
+    
+    <div class="content" id="about-content-1-opened">
+        <h1>Motivation and Ideology</h1>
+        <p>We are driven by a commitment to reshaping the way resources are sourced, products are made, and communities are supported. 
+        Our goal is to create sustainable, high-quality goods that reflect Canadian culture and values, challenging traditional models of production and consumption.</p>
+    </div>
+    
+    <div class="content" id="about-content-2-opened">
+        <h1>Resource Development</h1>
+        <p>We work tirelessly to find truly Canadian resources, overcoming the challenges posed by global outsourcing. 
+        Partnering with universities and local groups, we aim to discover, develop, and utilize local materials for a sustainable, ethical product line.</p>
+    </div>
+    
+    <div class="content" id="about-content-3-opened">
+        <h1>Creation and Innovation</h1>
+        <p>Through collaboration with creators, we develop innovative products that highlight Canadian craftsmanship and creativity. 
+        Our focus is on providing the tools, resources, and support to help creators build products that are both sustainable and meaningful.</p>
+    </div>
+    
+    <div class="content" id="about-content-4-opened">
+        <h1>Community Engagement</h1>
+        <p>We believe in the power of collaboration and are actively working with local businesses, schools, and community groups to foster long-term, sustainable growth. 
+        By building strong partnerships, we support the development of local industries and create a more resilient economy.</p>
+    </div>
+    
+    <div class="content" id="about-content-5-opened">
+        <h1>Market and Sales</h1>
+        <p>Our marketplace serves as a platform to sell not only our own products but also those created by other local artisans and businesses. 
+        By offering sustainable, high-quality products, we aim to make ethical consumption the easy and logical choice for consumers.</p>
+    </div>
+    
+    <div class="content" id="about-content-6-opened">
+        <h1>The Vision</h1>
+        <p>Our vision is to build a self-sustaining ecosystem where Canadian resources are prioritized, and businesses are empowered to thrive. 
+        We are working towards creating resource hubs and a CRM system that will streamline the development of local products and services, 
+        creating a lasting impact on communities and industries.</p>
+    </div>
+    
+    <div class="scroll-up-button"><button class="scroll-button" onclick="scrollToTop()"><ion-icon name="chevron-up-outline"></ion-icon></button></div>
+</div>
+
+<!-- S.T.A.R.T ROAD MAP CONTENT-->
+<div class="start-content" id="start-content">
+    <h1 class="project-title">S.T.A.R.T</h1>
+    
+    <div class="proj-desc">
+        <h3>We guide creators through the entire process, from ethically sourcing Canadian resources to delivering meaningful products. 
+        Our goal is to empower creators with practical skills and cultural understanding, fostering business growth and community-driven innovation. 
+        We envision a future where every product tells a story and creators grasp the full journey from resource to creation.</h3>
+    </div>
+    
+    <div class="road-map">
+        <div class="circle-1" id="start-content-1">
+            <h1 class="start-icon-titles">Our<br>Approach</h1>
+        </div>
+        <img class="path-1" src="/assets/path-left1.png" />
+        <div class="circle-2" id="start-content-2">
+            <h1 class="start-icon-titles">Student<br>Mentorship</h1>
+        </div>
+        <img class="path-2" src="/assets/path-right1.png" />
+        <div class="circle-3" id="start-content-3">
+            <h1 class="start-icon-titles">Affiliate<br>Tools</h1>
+        </div>
+        <img class="path-3" src="/assets/path-left1.png" />
+        <div class="circle-4" id="start-content-4">
+            <h1 class="start-icon-titles">Workshops and<br> Education</h1>
+        </div>
+        <img class="path-4" src="/assets/path-right1.png" />
+        <div class="circle-5" id="start-content-5">
+            <h1 class="start-icon-titles">Long-Term<br>Vision</h1>
+        </div>
+    </div>
+    
+    <div class="overlay" id="start-content-overlay"></div>
+    
+    <div class="content" id="start-content-1-opened">
+        <h1>Our Approach</h1>
+        <p>We guide the entire creative process, from ethically sourcing Canadian resources to delivering high-quality products. 
+        Our focus is on both the practical skills and the cultural significance that shape everything we create.</p>
+    </div>
+    
+    <div class="content" id="start-content-2-opened">
+        <h1>Student Mentorship</h1>
+        <p>Through Riipen, we provide college and university students with hands-on project experience to help them gain valuable skills for their future careers. 
+        This mentorship ensures students can apply their education to real-world business challenges.</p>
+    </div>
+    
+    <div class="content" id="start-content-3-opened">
+        <h1>Affiliate Tools</h1>
+        <p>We offer affiliate tools that support business growth, enabling entrepreneurs to access essential resources for success. 
+        These tools provide the foundation for businesses to scale effectively while focusing on sustainability and creativity.</p>
+    </div>
+    
+    <div class="content" id="start-content-4-opened">
+        <h1>Workshops and Education</h1>
+        <p>Currently in development our courses will be designed to teach both practical skills and the cultural and historical context behind every product. 
+        By engaging with these sessions, creators will gain the knowledge and purpose needed to craft meaningful work that resonates with its history and impact.</p>
+    </div>
+    
+    <div class="content" id="start-content-5-opened">
+        <h1>Long-Term Vision</h1>
+        <p>We aim to build a sustainable ecosystem where creators understand the full scope of their process, from the resources they use to the products they create. 
+        This vision fosters community growth and supports a cycle of innovation and cultural connection.</p>
+    </div>
+    
+    <div class="scroll-up-button"><button class="scroll-button" onclick="scrollToTop()"><ion-icon name="chevron-up-outline"></ion-icon></button></div>
+</div>
+
+<!-- THE RESERVOIR ROAD MAP CONTENT-->
+<!-- <div class="reservoir-content" id="reservoir-content"> -->
+<div class="reservoir-content" id="reservoir-content">
+    <h1 class="project-title">The Reservoir</h1>
+    
+    <div class="proj-desc">
+        <h3>Where sustainable, local resource sourcing begins, grounded in principles of growth and regeneration. 
+        We’re rethinking traditional approaches to resources, community, and growth to tap into Canada’s abundant, underutilized natural resources. 
+        Through innovative solutions and partnerships, we aim to create a connected, regenerative ecosystem that drives local economies and industries forward.</h3>
+    </div>
+    
+    <div class="road-map">
+        <div class="circle-1" id="reservoir-content-1">
+            <h1 class="reservoir-icon-titles">Resource<br>Mapping</h1>
+        </div>
+        <img class="path-1" src="/assets/path-left1.png" />
+        <div class="circle-2" id="reservoir-content-2">
+            <h1 class="reservoir-icon-titles">Data<br>Insights</h1>
+        </div>
+        <img class="path-2" src="/assets/path-right1.png" />
+        <div class="circle-3" id="reservoir-content-3">
+            <h1 class="reservoir-icon-titles">Manufacturing<br>Hubs</h1>
+        </div>
+        <img class="path-3" src="/assets/path-left1.png" />
+        <div class="circle-4" id="reservoir-content-4">
+             <h1 class="reservoir-icon-titles">Innovation<br>Partnerships</h1>
+        </div>
+        <img class="path-4" src="/assets/path-right1.png" />
+        <div class="circle-5" id="reservoir-content-5">
+             <h1 class="reservoir-icon-titles">Local<br>Economies</h1>
+        </div>
+    </div>
+    
+    <div class="overlay" id="reservoir-content-overlay"></div>
+    
+    <div class="content" id="reservoir-content-1-opened">
+        <h1> Resource Mapping</h1>
+        <p>We are currently identifying Canada’s abundant but underutilized natural resources with the goal of bringing them into sustainable, mainstream production. 
+        Our research focuses on finding new ways to ethically access and refine these resources to benefit various industries.</p>
+    </div>
+    
+    <div class="content" id="reservoir-content-2-opened">
+        <h1>Data Insights</h1>
+        <p>We’re collaborating with universities to create an interactive map that identifies the location of natural resources across North America. 
+        This tool will help pinpoint key resources and highlight areas where manufacturing facilities for processing these materials are already established.</p>
+    </div>
+    
+    <div class="content" id="reservoir-content-3-opened">
+        <h1>Manufacturing Hubs</h1>
+        <p>We’re partnering with universities to identify the best regions for building manufacturing hubs that support local resource processing. 
+        These locations are selected based on factors like infrastructure, resource availability, and access to skilled labor.</p>
+    </div>
+    
+    <div class="content" id="reservoir-content-4-opened">
+        <h1>Innovation Partnerships</h1>
+        <p>By partnering with top universities and colleges, we gain valuable insights into the latest technologies and methodologies for refining raw materials. 
+        These collaborations help us advance sustainable practices in both resource extraction and manufacturing processes.</p>
+    </div>
+    
+    <div class="content" id="reservoir-content-5-opened">
+        <h1>Local Economies</h1>
+        <p>Our efforts are focused on creating manufacturing hubs that support regional economies by leveraging local resources and talent. 
+        These hubs will serve as centers of innovation, fostering growth in both industry and community while promoting sustainable development.</p>
+    </div>
+    
+    <div class="scroll-up-button"><button class="scroll-button" onclick="scrollToTop()"><ion-icon name="chevron-up-outline"></ion-icon></button></div>
+</div>
+
+<!-- STREAM WEAVER ROAD MAP CONTENT-->
+
+<div class="streamweaver-content" id="streamweaver-content">
+    <h1 class="project-title">Stream Weaver</h1>
+    <div class="proj-desc">
+         <h3>Connecting materials, ideas, and stories to create products that reflect local craftsmanship. 
+         We focus on making the process transparent and engaging for everyone involved, while prioritizing creativity, collaboration, and culture. 
+         It’s about more than the final product—it’s about understanding the journey and the people behind it.</h3>
+    </div>
+
+    <div class="road-map-streamweaver">
+        <div class="circle-1" id="streamweaver-content-1">
+            <h1 class="streamweaver-icon-titles">Creation<br>Foundation</h1>
+        </div>
+        <img class="path-1" src="/assets/path-left1.png" />
+        <div class="circle-2" id="streamweaver-content-2">
+             <h1 class="streamweaver-icon-titles">Collaborative<br>Process</h1>
+        </div>                                    
+        <img class="path-2" src="/assets/path-right1.png" />
+        <div class="circle-3" id="streamweaver-content-3">
+             <h1 class="streamweaver-icon-titles">Impactful<br>Storytelling</h1>
+        </div>
+        <img class="path-3" src="/assets/path-left1.png" />
+        <div class="circle-4" id="streamweaver-content-4">
+            <h1 class="streamweaver-icon-titles">Sustainable<br>Outcome</h1>
+        </div>
+    </div>
+
+    <div class="overlay" id="streamweaver-content-overlay"></div>
+
+    <div class="content" id="streamweaver-content-1-opened">
+        <h1>Creation Foundation</h1>
+        <p>The foundation of every product begins with sustainable sourcing from The Reservoir or other local producer, where natural resources are carefully chosen for ethical use. 
+        This process ensures that each item starts with materials that respect both the land and its people, creating the groundwork for a responsible creation cycle.</p>
+        </div>
+
+    <div class="content" id="streamweaver-content-2-opened">
+        <h1>Collaborative Process</h1>
+        <p>Where creators, artisans, and community partners come together to bring raw materials into usable forms. 
+        It’s a collaborative, hands-on process that connects people with the materials they work with and brings the story of the land into each product.</div>
+
+    <div class="content" id="streamweaver-content-3-opened">
+        <h1>Impactful Storytelling</h1>
+        <p>Every product created tells a story that reflects not only the vision of its maker but also the culture and heritage of the community. 
+        Through Stream Weaver, the process connects the past, present, and future, ensuring that the product tells a meaningful story from beginning to end.</p>
+    </div>
+
+    <div class="content" id="streamweaver-content-4-opened">
+        <h1>Sustainable Outcome</h1>
+        <p>The final product is a testament to the efforts of every person and resource involved in its creation. 
+        By focusing on sustainability, creativity, and ethics, we ensure that our products are not only high-quality but also contribute to a future where people, the environment, and businesses thrive together.</p>
+    </div>
+
+    <div class="scroll-up-button"><button class="scroll-button" onclick="scrollToTop()"><ion-icon name="chevron-up-outline"></ion-icon></button></div></div>
+
+<!-- MILKY THE MOUSE ROAD MAP CONTENT-->
+<div class="yss-live-content" id="yss-live-content">
+    <h1 class="project-title">Milky The Mouse</h1>
+    
+    <div class="proj-desc">
+        <h3>Inspire creativity, learning, and play with the Milky The Mouse S.T.E.A.M. collection. 
+        Designed to spark imagination and develop essential skills, this product line combines storytelling, problem-solving, and hands-on activities. 
+        With a focus on fun and education, it encourages children to explore, create, and discover new possibilities.
+        </h3>
+    </div>
+    
+    <div class="road-map"><!--Icons inside the road map-->
+        <div class="circle-1" id="yslc-content-1">
+            <h1 class="yss-live-icon-titles">Spring<br>Launch</h1>
+        </div>
+        <img class="path-2" src="/assets/path-right1.png" />
+        <div class="circle-2" id="yslc-content-2">
+            <h1 class="yss-live-icon-titles">What’s<br>Coming</h1>
+        </div>
+        <img class="path-1" src="/assets/path-left1.png" />
+        <div class="circle-3" id="yslc-content-3">
+        <h1 class="yss-live-icon-titles">Growing<br>Together</h1>
+
+        </div>
+        <img class="path-4" src="/assets/path-right1.png" />
+        <div class="circle-4" id="yslc-content-4">
+            <h1 class="yss-live-icon-titles">Your<br>Ideas</h1>
+        </div>
+        <img class="path-3" src="/assets/path-left1.png" />
+        <div class="circle-5" id="yslc-content-5">
+            <h1 class="yss-live-icon-titles">Community<br>Support</h1>
+        </div>
+    </div>
+    
+    <div class="overlay" id="yslc-content-overlay"></div>
+    
+    <div class="content" id="yslc-content-1-opened">
+        <div class="inner-yss-live-content-3">
+            <h1>Spring Launch</h1>
+            <p>Our spring launch is just around the corner!
+            Get ready for exciting new Milky The Mouse products.</p>
+        </div>
+    </div>
+    
+    <div class="content" id="yslc-content-2-opened">
+        <h1>What’s Coming</h1>
+        <p>We’re working on new products that will be available soon. 
+        Stay tuned for updates on upcoming releases!</p>
+    </div>
+    
+    <div class="content" id="yslc-content-3-opened">
+        <h1>Growing Together</h1>
+        <p>Your input is essential in shaping our future offerings. 
+        Together, we can create something that resonates with families everywhere.</p>
+    </div>
+    
+    <div class="content" id="yslc-content-4-opened">
+        <h1>Your Ideas</h1>
+        <p>We’re excited to hear what products you’d love to see from Milky The Mouse.
+            Your feedback helps us create something truly magical.</p>
+    </div>
+    
+    <div class="content" id="yslc-content-5-opened">
+        <h1>Community Support</h1>
+        <p>We love supporting local organizations. 
+        If you’d like to collaborate with us, reach out and share your vision!</p>
+    </div>
+    <div class="scroll-up-button"><button class="scroll-button" onclick="scrollToTop()"><ion-icon name="chevron-up-outline"></ion-icon></button></div></div>
+    
+<!-- PORTAL TERMS ROAD MAP CONTENT-->
+<div class="portal-content" id="portal-content">
+    <h1 class="project-title">Terms And Conditions</h1>
+    
+    <div class="proj-desc">
+        <h3>These encompass S.T.A.R.T. Bridge, The Reservoir, Stream Weaver, and The Portal Post Marketplace.
+        This serves as a framework to guide your experience and clarify our mutual responsibilities.
+        This includes natural resource extraction and processing, product development. 
+        It covers both online and brick-and-mortar marketplace activities, content creation, and general liability.
+        By using this site, you agree to the terms.</h3>
+    </div>
+    
+    <div class="road-map">
+        <div class="circle-1" id="portal-content-1">
+            <h1 class="portal-icon-titles">Introduction<br></h1>
+        </div>
+        <img class="path-1" src="/assets/path-left1.png" />
+        <div class="circle-2" id="portal-content-2">
+            <h1 class="portal-icon-titles">Ownership</h1>
+        </div>
+        <img class="path-2" src="/assets/path-right1.png" />
+        <div class="circle-3" id="portal-content-3">
+            <h1 class="portal-icon-titles">Purchases</h1>
+        </div>
+        <img class="path-3" src="/assets/path-left1.png" />
+        <div class="circle-4" id="portal-content-4">
+            <h1 class="portal-icon-titles">Engagement</h1>
+        </div>
+        <img class="path-4" src="/assets/path-right1.png" />
+        <div class="circle-5" id="portal-content-5">
+            <h1 class="portal-icon-titles">Support</h1>
+        </div>
+    </div>
+    
+    <div class="overlay" id="portal-content-overlay"></div>
+    
+    <div class="content" id="portal-content-1-opened">
+        <h1>Introduction</h1>
+        <p>Welcome to Your Sweet Spot Life, which includes S.T.A.R.T. Bridge, The Reservoir, Stream Weaver, and The Portal Post Marketplace. 
+        Our Terms and Conditions provide a comprehensive framework governing your experience across our services, including natural resource extraction and processing, product development, both online and brick-and-mortar marketplaces, content creation, and general liability. 
+        By using this site or interacting with our venues, you agree to these terms.</p>
+    </div>
+    
+    <div class="content" id="portal-content-2-opened">
+        <h1>Ownership</h1>
+        <p>These Terms and Conditions govern your use of all platforms and services associated with Your Sweet Spot Life. 
+        By accessing our site and services, you agree to adhere to these terms in their entirety. 
+        We are committed to creating a positive experience that respects the rights and expectations of all users. 
+        If you do not agree to these terms, please refrain from using our services.</p>
+    </div>
+    
+    <div class="content" id="portal-content-3-opened">
+        <h1>Purchases</h1>
+        <p>These terms apply to the purchase of goods and services across our online and brick-and-mortar marketplaces. 
+        Payment is required in full at the time of ordering. 
+        While we strive for accuracy in product descriptions, prices, and availability, we cannot guarantee that all information is current or error-free. 
+        We reserve the right to modify or cancel orders at our discretion. 
+        Please review your order carefully before finalizing your purchase</p>
+    </div>
+    
+    <div class="content" id="portal-content-4-opened">
+        <h1>Engagement</h1>
+        <p>We encourage constructive engagement with our community on social media. 
+        We expect all users to communicate respectfully, and any offensive, defamatory, or discriminatory comments may be removed. 
+        Repeated violations could lead to blocking from our channels. 
+        While we aim to maintain a safe and secure environment, we cannot be held liable for any indirect or consequential damages arising from the use of our products or services.</p>
+    </div>
+    
+    <div class="content" id="portal-content-5-opened">
+        <h1>Support</h1>
+        <p>We feature third-party goods and services but do not guarantee their quality or effectiveness. 
+        To ensure reliability, we personally check the quality of our vendors by purchasing their products and testing their services. 
+        If we have not tested a product or service, we will clearly indicate this on the marketplace. 
+        Vendors are responsible for the accuracy of their listings, and we encourage you to review their specific policies. 
+        If you have questions or need clarification regarding our Terms and Conditions, please reach out through our social media sites. 
+        Your feedback is invaluable, and we continually seek to enhance our resources.</p>
+    </div>
+    
+    <div class="scroll-up-button"><button class="scroll-button" onclick="scrollToTop()"><ion-icon name="chevron-up-outline"></ion-icon></button></div>
+</div>
+
+
+<!-- THE PORTAL POST ROAD MAP CONTENT-->
+<div class="marketplace-content" id="marketplace-content">
+    <h1 class="project-title">The Portal Post</h1>
+    
+    <div class="proj-desc">
+    <h3>Welcome to The Portal Post, where stories and life intersect through collaboration, creativity, and shared purpose. 
+    We celebrate the richness of our community by showcasing talented vendors and skilled craftsmen from across Canada.</h3> 
+    
+    <h3>Here, we listen to what matters most to our community while fostering opportunities for growth and connection. 
+    Before you start shopping, please select the previous icon to review our terms and conditions.</h3>
+    
+    <p>Please note that products marked with a (*) symbol have not been tested by our team.</p>
+    </div>
+    
+    <div class="road-map">
+        <div class="circle-1" id="mp-content-1">
+        <h1 class="mp-icon-titles">Now<br>Available!</h1>
+        </div>
+        <img class="path-1" src="/assets/path-left1.png" />
+        <div class="circle-2" id="mp-content-2">
+            <h1 class="mp-icon-titles">Lifestyle<br>Brands</h1>
+        </div>
+        <img class="path-2" src="/assets/path-right1.png" />
+        <div class="circle-3" id="mp-content-3">
+        <h1 class="mp-icon-titles">Business<br>Tools</h1>
+        </div>
+        <img class="path-3" src="/assets/path-left1.png" />
+        <div class="circle-4" id="mp-content-4">
+            <h1 class="mp-icon-titles">In<br>Development</h1>
+        </div>
+        <img class="path-4" src="/assets/path-right1.png" />
+        <div class="circle-5" id="mp-content-5">
+            <h1 class="mp-icon-titles">Community<br>Contributions</h1>
+        </div>
+        <img class="path-5" src="/assets/path-left1.png" />
+        <div class="circle-6" id="mp-content-6">
+            <h1 class="mp-icon-titles">Become A<br>Vendor</h1>
+        </div>
+    </div>
+    
+    <div class="overlay" id="mp-content-overlay"></div>
+    
+    <div class="content" id="mp-content-1-opened">
+        <h1>Now Available</h1>
+        <p>Milky The Mouse: In Space prooduct line. The book, the step by step guide to creating your own story and the backpack to put it all together.</p>
+                <h2><a href= "https://sales.yoursweetspot.life/milky-the-mouse-in-space-book">Book</a></h2>
+        
+    </div>
+    
+    <div class="content" id="mp-content-2-opened">
+        <h1>Lifestyle</h1>
+        <p>Explore products that align with your lifestyle—practical, stylish, and sustainable essentials for home, kitchen, and garden.
+        We’re here to help you make choices that reflect your values, from enriching travel experiences to everyday essentials.</p>
+                <h2><a href="https://click.linksynergy.com/fs-bin/click?id=IY%2aF6CaOY6U&offerid=959514.10001075&type=3&subid=0">Dyson</a></h2>
+        <h2><a href="https://nomadicglens.studio">Discover</a></h2>
+        <h2><a href="https://shareasale.com/r.cfm?b=2628364&u=2764244&m=47975&urllink=&afftrack=">Urth Box</a></h2>
+        <h2><a href="https://shareasale.com/r.cfm?b=1212490&u=2764244&m=81156&urllink=&afftrack=">Tru Local</a></h2>
+        <h2><a href="https://click.linksynergy.com/fs-bin/click?id=IY%2aF6CaOY6U&offerid=839119.1693&type=3&subid=0">*Tundra Kitchen</a></h2>
+        <h2><a href="https://click.linksynergy.com/fs-bin/click?id=IY%2aF6CaOY6U&offerid=791219.28&type=3&subid=0">*Wazo Furniture</a></h2>
+        <h2><a href="https://shareasale.com/r.cfm?b=1563624&u=2764244&m=53527&urllink=&afftrack=">*Simple Loose Leaf</a></h2>
+    </div>
+    
+    <div class="content" id="mp-content-3-opened">
+        <h1>Business Tools</h1>
+        <p>Equip your business for success with trusted third-party services and tools. 
+        From legal support to digital solutions, our collection of business resources helps you build, grow, and thrive in today’s marketplace.</p>
+        
+        <h2><a href="https://track.flexlinkspro.com/g.ashx?foid=156354.1287233082.1761759717&trid=1242504.221218&foc=16&fot=9999&fos=5">Ownr</a></h2>
+        <h2><a href="https://www.adobe.com/?sdid=49F59KY6">Adobe</a></h2>
+        <h2><a href="https://skillshare.eqcm.net/kjBqoM">Skillshare</a></h2>
+        <h2><a href="https://www.lawdepot.ca/?pid=pg-WODYQJ2JV9-generaltextlink">Law Depot</a></h2>
+        <h2><a href="https://hrblockcanada.uisv.net/WDmmgJ">H&R Block</a></h2>
+        <h2><a href="https://shareasale.com/r.cfm?b=1423816&u=2764244&m=46483&urllink=&afftrack=">Namecheap Domains</a></h2>
+    </div>
+    
+    <div class="content" id="mp-content-4-opened">
+        <h1>In Development</h1>
+        <p>Exciting new projects are underway as we continue to innovate and expand. 
+        Stay tuned for upcoming launches and developments that will bring fresh opportunities and experiences to our community.</p>
+        
+        <h1>Milky The Mouse Product Line (April 2025)</h1>
+        <p>We are working to develop S.T.E.A.M. focused toys to teach kids about the creation process. Stay tuned for updates.</p>
+        
+        <h1>Home Based Hydroponics System  (Start Date October 2025)</h1>
+        <p>We will begin working with the prototyping lab at the University of Prince Edward Island in October 2025 to develop a home-based hydroponics system.</p>
+        
+        <h1>The Portal Tree Chronicles Festival (Projected Date September 2025)</h1>
+        <p>The festival will showcase Colten and Phoenix's a story about the journey to healing, growth and the power of supportive community.
+        This festival will use interactive experiences, educational opportunities, and products inspired by the narrative to foster community support and long term sustainable growth.</p>
+    </div>
+    
+    <div class="content" id="mp-content-5-opened">
+        <h1>Community Contributions</h1>
+        <p>See the community groups we support</p>
+        
+        <h1>We're Here For You Canada</h1>
+        <p>An organization that supports people leaving abusive situations by providing essential items like clothing, meals, and shoes. 
+        Your purchase helps those in need rebuild their lives.</p>
+        <h2><a href="https://www.werehereforyou.ca/resources.html#/">Learn More</a></h2>
+         
+        <h1>Anchored Mouse by Elizabeth Fry Society Saint John New Brunswick</h1>
+        <p>A social enterprise designed to tackle the challenges faced by women and gender-diverse individuals impacted by criminalization. 
+        They understand the hurdles that hinder financial independence and overall well-being, and that’s why Anchored Mouse is here to make a difference. </p>
+        <h2><a href="https://www.efrynb.ca/anchored-mouse">Learn More</a></h2>
+        
+        <h1>Want Us To Support You?</h1>
+        <p>We are always looking for high impact sustainable community groups and non profits to support. 
+        Just send us a message on one of our social media pages to get started</p>
+    </div>
+    
+    <div class="content" id="mp-content-6-opened">
+        <h1>Become A Vendor</h1>
+         <p>Want to become a vendor with us? Send us a message on one of our social media pages to apply.</p>
+    </div>
+    
+    <div class="scroll-up-button"><button class="scroll-button" onclick="scrollToTop()"><ion-icon name="chevron-up-outline"></ion-icon></button></div>
+</div>
+
+<!-- CONTRIBUTORS PAGE CONTENT-->
+<div class="contributor-page" id="contributor-page">
+    <div class="hero-page">
+<!-- suky add contributor videos buttons -->
+    <h2>Meet the students who have worked with us and discover the innovative projects they have contributed to within our network.</h2>
+    <h1></h1>
+<div class="contributor_video_container">
+    <div class="videoPopup" id="video_1">
+        <div class="videoContainer">
+          <video controls>
+            <source src="./assets/contributor_video_1.mp4"
+            type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <button class="closeVideoBtn" id="closeBtn_1">X</button>
+        </div>
+    </div>
+    
+    <div class="videoPopup" id="video_2">
+        <div class="videoContainer">
+          <video controls>
+            <source src="./assets/contributor_video_2.mp4" 
+            type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <button class="closeVideoBtn" id="closeBtn_2">X</button>
+        </div>
+    </div>
+    
+    <div class="videoPopup" id="video_3">
+        <div class="videoContainer">
+          <video controls>
+            <source src="./assets/contributor_video_3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <button class="closeVideoBtn" id="closeBtn_3">X</button>
+        </div>
+    </div>
+    
+    <div class="videoPopup" id="video_4">
+        <div class="videoContainer">
+          <video controls>
+            <source src="./assets/contributor_video_4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <button class="closeVideoBtn" id="closeBtn_4">X</button>
+        </div>
+    </div>
+    
+    <div class="videoPopup" id="video_5">
+        <div class="videoContainer">
+          <video controls>
+            <source src="./assets/contributor_video_5.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <button class="closeVideoBtn" id="closeBtn_5">X</button>
+        </div>
+    </div>
+    
+    <div class="videoPopup" id="video_6">
+        <div class="videoContainer">
+          <video controls>
+            <source src="./assets/contributor_video_6.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <button class="closeVideoBtn" id="closeBtn_6">X</button>
+        </div>
+    </div>
+    
+    <div class="videoPopup" id="video_7">
+        <div class="videoContainer">
+          <video controls>
+            <source src="./assets/contributor_video_7.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <button class="closeVideoBtn" id="closeBtn_7">X</button>
+        </div>
+    </div>
+    
+    <div class="videoPopup" id="video_8">
+        <div class="videoContainer">
+          <video controls>
+            <source src="./assets/contributor_video_8.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <button class="closeVideoBtn" id="closeBtn_8">X</button>
+        </div>
+    </div>
+    <div class="videoPopup" id="video_2">
+        <div class="videoContainer">
+          <video controls>
+            <source src="./assets/contributor_video_2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <button class="closeVideoBtn" id="closeBtn_2">X</button>
+        </div>
+    </div>
+    
+    <button class="contributor_button">
+        <img src="./assets/contributor_profile_2.jpg" id="imgButton_1">
+        <span>Anna</span>
+        <h2>Anna</h2>
+    </button>
+    <button class="contributor_button">
+        <img src="./assets/contributor_profile_4.jpg" id="imgButton_2">
+        <span>Ethan</span>
+        <h2>Ethan</h2>
+
+    </button>
+    <button class="contributor_button">
+        <img src="./assets/contributor_profile_5.jpg" id="imgButton_3">
+        <span>Megha</span>
+        <h2>Megha</h2>
+
+    </button>
+    <button class="contributor_button">
+        <img src="./assets/contributor_profile_6.jpg" id="imgButton_4">
+        <span>Asees</span>
+        <h2>Asees</h2>
+
+    </button>
+    <button class="contributor_button">
+        <img src="./assets/contributor_profile_7.jpg" id="imgButton_5">
+        <span>Navreet</span>
+        <h2>Navreet</h2>
+
+    </button>
+    <button class="contributor_button">
+        <img src="./assets/contributor_profile_10.jpg" id="imgButton_6">
+        <span>Vanessa</span>
+        <h2>Vanessa</h2>
+
+    </button>
+    <button class="contributor_button">
+        <img src="./assets/contributor_profile_11.jpg" id="imgButton_7">
+        <span>Anthony</span>
+        <h2>Anthony</h2>
+
+    </button>
+    <button class="contributor_button">
+        <img src="./assets/contributor_profile_15.jpg" id="imgButton_8">
+        <span>Abdulla</span>
+        <h2>Abdulla</h2>
+    </button>
+    </div>
+<div class="contributors-op">
+<h1 class="project-title">You can get involved too!</h1>
+<div class="proj-desc" id="bottle-drive-desc"></div>
+<div class="opportunities">
+<div class="op-list-1">
+<ul>
+    <li><h3>Now that you've seen the work some of the work our students have done
+    <br>learn how you can get involved in our ever evolving network.
+    <br>Please don't hesitate to reach out.</h3></li>
+	<li>For The S.T.A.R.T Bridge program we are looking for mentors who want to share their knowledge.
+	<br>To create programs to train pre-startup and developing business owners.</li>
+	<li>For The Reservoir we are looking for environmentalists, farmers, supply chain experts, manufactures,
+	<br> and computer programmers to help us develop a start to finish resource system.</li>
+	<li>For Stream Weaver we are looking to collaborate with
+	<br>aritsts, craftsmen, designers, engineers, storytellers, etc.</li>
+	<li>For The Portal Post we are looking for vendors
+	<br>To sell high quality sustainable work from businesses that support their community.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="bottle-drive"><div class="bottle-drive-title"></div>
+<div class="proj-desc" id="bottle-drive-desc"></div>
+<div class="bd-instructions">
+<div class="bd-order">
+<ul></ul>
+</div>
+</div>
+</div>
+<div class="contributors-section">
+<h3 class="contributor-embed-title"></h3>
+<h2>Just connect with us on one of our social media sites to support our projects.</h2></div>
+<div class="scroll-up-button"><button class="scroll-button" onclick="scrollToTop()"><ion-icon name="chevron-up-outline"></ion-icon></button></div></div>
+
+<!-- FAQ PAGE CONTENT-->
+<div class="faq" id="faq">
+    <div class="hero-page">
+        <h1 class="project-title">How Can We Help?</h1>
+
+        <div class="proj-desc">
+            <h3>Thank you for your interest in Your Sweet Spot Life. 
+            Whether you have a question, a suggestion, or just want to say hello, we&#39;d love to hear from you. 
+            Just connect on one of our social media sites.</h3>
+        </div>
+    </div>
+
+<div style="margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-right: 15%;
+    margin-left: 15%;">
+    <h1 class="faq-title">FAQ</h1>
+    <div class="message">
+        <div class="general-topic0">General Questions</div>
+    </div>
+
+    <div class="message">
+        <div class="question">What is Your Sweet Spot Life?</div>
+
+        <div class="answer">Your Sweet Spot Life is a social enterprise dedicated to transforming communities through various projects and initiatives that celebrate creativity, innovation, and storytelling.</div>
+    </div>
+
+    <div class="message">
+        <div class="question">How can I get involved with Your Sweet Spot Life?</div>
+
+        <div class="answer">There are several ways to get involved, including participating in our events, workshops, and festivals, as well as supporting our initiatives through partnerships or sponsorships.</div>
+    </div>
+
+    <div class="message">
+        <div class="question">What is the mission of Your Sweet Spot Life?</div>
+        <div class="answer">Our mission is to foster community development, celebrate Canadian culture, and drive positive change through storytelling, creativity, and innovation.</div>
+    </div>
+
+    <div class="message">
+        <div class="general-topic">Partnership and Collaboration</div>
+    </div>
+
+    <div class="message">
+        <div class="question">How can my business or organization partner with Your Sweet Spot Life?</div>
+        <div class="answer">We welcome partnerships with businesses, organizations, and individuals who share our values and goals. 
+        To connect just message us on one of our social media sites.</div>
+    </div>
+
+    <div class="message">
+        <div class="general-topic">Opportunities</div>
+    </div>
+
+    <div class="message">
+        <div class="question">Does Your Sweet Spot Life work with local communities?</div>
+        <div class="answer">Yes, we collaborate closely with local communities to ensure that our projects are authentic, impactful, and aligned with their needs and aspirations</div>
+    </div>
+
+    <div class="message">
+        <div class="general-topic">Events and Initiatives</div>
+    </div>
+
+    <div class="message">
+        <div class="question">What kind of events does Your Sweet Spot Life organize?</div>
+        <div class="answer">We organize a variety of events, including festivals, workshops, storytelling performances, and educational programs, all aimed at promoting creativity, community building, and cultural enrichment</div>
+    </div>
+
+    <div class="message">
+        <div class="question">How can I attend Your Sweet Spot Life events?</div>
+        <div class="answer">Information about our upcoming events, including dates, venues, and ticketing details, will be coming soon. Just stay connected through one of our social media pages.</div>
+    </div>
+
+    <div class="message">
+        <div class="general-topic">Support and Contact</div>
+    </div>
+
+    <div class="message">
+        <div class="question">How can I support Your Sweet Spot Life&#39;s mission?</div>
+        <div class="answer">You can support us by attending our events, spreading the word about our initiatives, volunteering your time or skills, and purchasing products in our marketplace.</div>
+    </div>
+</div>
+
+<div class="scroll-up-button"><button class="scroll-button" onclick="scrollToTop()"><ion-icon name="chevron-up-outline"></ion-icon></button></div>
+</div>
+
+<!-- FOOTER THAT INCLUDES SOCIAL MEDIA ICON AND COPYRIGHT INFO -->
+<!--div class="footer" id="footer" -->
+<footer style="width: 97%; padding: 15px; text-align: center; background-image: linear-gradient(white, white 15%, var(--green));">
+    <h1>Connect With Us Here.</h1>
+    <h3 class="footer-copyright">You're probably thinking, "interesting website. So what is it you do?" It's simple, I promise.
+    <br>Click the LinkedIn icon to see what I mean.</h3>
+    
+    <div class="social-media-set">
+        <div class="social-media-buttons" id="social-media-buttons">
+            <button onclick='window.location.href="https://www.facebook.com/yoursweetspotlife"' class="facebook">
+            <ion-icon name="logo-facebook"></ion-icon></button>
+            
+            <button onclick='window.location.href="https://ca.pinterest.com/yoursweetspotlife/"' class="pinterest">
+            <ion-icon name="logo-pinterest"></ion-icon></button>
+   
+            <button onclick='window.location.href="https://www.linkedin.com/company/yoursweetspotlife"' class="linkedin">
+            <ion-icon name="logo-linkedin"></ion-icon></button></div>
+        </div>
+        <h3 class="footer-copyright">All rights reserved by Your Sweet Spot Life</h3>
+        <script src = "script.js"></script>
+    </div>
+</footer>
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+</html>
