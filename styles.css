@@ -456,6 +456,14 @@ cursor: pointer;
     margin-top: -2%;
 }
 
+#mapping-content{
+    display: none; 
+    justify-content: center;
+    text-align: center;
+    height: auto; 
+    margin-top: 5%; 
+}
+
 .road-map{
     margin-left: 25%;
     margin-right: 15%;
@@ -506,6 +514,42 @@ cursor: pointer;
 }
 
 .road-map-ysslive {
+    cursor: pointer;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+road-map-contributor{
+    margin-left: 25%;
+    margin-right: 15%;
+    margin-top: 3%;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: 2fr 2fr 2fr 2fr 2fr;
+    grid-row-gap: 4rem;
+    grid-column-gap: 4rem;
+    align-items: center;
+}
+
+road-map-mapping{
+    margin-left: 25%; 
+    margin-right: 15%; 
+    margin-top: 3%; 
+    text-align: center; 
+    justify-content: conter;
+    display: grid; 
+    grid-template-columns: repeat(2, 2fr); 
+    grid-template-rows: 2fr 2fr 2fr 2fr 2fr; 
+    grid-row-gap: 4rem; 
+    grid-column-gap: 4rem;
+    align-items: center; 
+}
+
+.road-map- {
     cursor: pointer;
     width: 250px;
     height: 250px;
@@ -626,11 +670,22 @@ cursor: pointer;
 
 }
 
+.contributor-content .road-map div
+{
+    background: linear-gradient(#ff9bf0, #600ac9);;
+}
+
+
 .marketplace-content .road-map div{
     background: linear-gradient(#00ffa5, #0ba88f);;
 
 }
 .portal-content .road-map div
+{
+    background: linear-gradient(#ff9bf0, #600ac9);;
+}
+
+.mapping-content .road-map div
 {
     background: linear-gradient(#ff9bf0, #600ac9);;
 }
@@ -713,6 +768,21 @@ cursor: pointer;
     height: 100%;
 }
 
+.contributor-content .road-map div button{
+    width: 100%;
+    height: 100%; 
+    border-radius: 50%;
+    object-fit: cover;
+    border: none;
+    cursor: pointer;
+}
+.contributor-content .road-map div button img{
+    object-fit: cover;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
 .marketplace-content .road-map div button{
     width: 100%;
     height: 100%;
@@ -728,7 +798,20 @@ cursor: pointer;
     height: 100%;
 }
 
-
+.mapping-content .mapping-content div button{
+    width: 100%; 
+    height: 100%; 
+    border-radius: 50%; 
+    object-fit: cover;
+    border: none;
+    cursor: pointer;
+}
+.mapping-content .mapping-content div button img{
+    object-fit: cover;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%; 
+}
 
 #about-content-1, #about-content-2, #about-content-3, #about-content-4, #about-content-5, #about-content-6, #about-content-7{
     transition: all 0.5s;
@@ -883,17 +966,17 @@ cursor: pointer;
     display: none;
 }
 
-#portal-content-1, #portal-content-2, #portal-content-3, #portal-content-4, #portal-content-5{
+#portal-content-1, #portal-content-2, #portal-content-3, #portal-content-4, #portal-content-5, #portal-content-6{
     transition: all 0.5s;
 
 }
-#portal-content-1:hover, #portal-content-2:hover, #portal-content-3:hover, #portal-content-4:hover, #portal-content-5:hover{
+#portal-content-1:hover, #portal-content-2:hover, #portal-content-3:hover, #portal-content-4:hover, #portal-content-5:hover, #portal-content-6:hover{
     transform: scale(1.25);
 }
 #portal-content{
     display: none;
 }
-#portal-content-1-opened, #portal-content-2-opened, #portal-content-3-opened, #portal-content-4-opened, #portal-content-5-opened{
+#portal-content-1-opened, #portal-content-2-opened, #portal-content-3-opened, #portal-content-4-opened, #portal-content-5-opened, #portal-content-6-opened{
     display: none;
 }
 
@@ -910,6 +993,30 @@ cursor: pointer;
     display: none;
 }
 
+#contributor-content-1, #contributor-content-2, #contributor-content-3, #contributor-content-4, #contributor-content-5, #contributor-content-6
+{
+    transition: all 0.5s;
+}
+#contributor-content-1:hover, #contributor-content-2:hover, #contributor-content-3:hover, #contributor-content-4:hover, #contributor-content-5:hover, #contributor-content-6:hover
+{
+    transform:scale(1.25);
+}
+#contributor-content-1-opened, #contributor-content-2-opened, #contributor-content-3-opened, #contributor-content-4-opened, #contributor-content-5-opened, #contributor-content-6-opened {
+    display: none;
+}
+
+#mapping-content-1, #mapping-content-2, #mapping-content-3, #mapping-content-4, #mapping-content-5, #mapping-content-6
+{
+    transition: all 0.5s; 
+}
+#mapping-content-1:hover, #mapping-content-2:hover, #mapping-content-3: hover, #mapping-content-4: hover, #mapping-content-5: hover, #mapping-content-6: hover
+{
+    transform:scale(1.25);
+}
+#mapping-content-1-opened, #mapping-content-2-opened, #mapping-content-3-opened, #mapping-content-4-opened, #mapping-content-5-opened, #mapping-content-6-opened,
+{
+    display: none;
+}
 
 .hero-page {
     display: flex;
@@ -1025,7 +1132,7 @@ cursor: pointer;
 }
 
 
-.about-icon-titles, .streamweaver-icon-titles, .reservoir-icon-titles, .start-icon-titles, .yss-live-icon-titles, .portal-icon-titles, .mp-icon-titles
+.about-icon-titles, .streamweaver-icon-titles, .reservoir-icon-titles, .start-icon-titles, .yss-live-icon-titles, .portal-icon-titles, .contributor-icon-titles, .mp-icon-titles, .mapping-icon-titles
 {
     text-align: center;
     padding-top: 28%;
