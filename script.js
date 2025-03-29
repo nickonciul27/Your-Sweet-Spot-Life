@@ -1,5 +1,5 @@
 // Buttons and Contents Variables
-    const aboutUsButton = document.getElementById('about-us-button');
+const aboutUsButton = document.getElementById('about-us-   button');
     const aboutUsContent = document.getElementById('about-content');
     const StartButton = document.getElementById("start-button");
     const StartContent = document.getElementById("start-content");
@@ -19,6 +19,8 @@
     const ContributorContent = document.getElementById("contributor-page");
     const FaqButton = document.getElementById("faq-button");
     const FaqContent = document.getElementById("faq");
+    const MappingButton = document.getElementById('mapping-button');
+    const MappingContent = document.getElementById('mapping-content'); 
     
 
    
@@ -107,6 +109,7 @@ document.getElementById("closeBtn_8").addEventListener("click", function() {
         ContributorContent.style.display = "none";
         PortalContent.style.display = "none";
         MarketplaceContent.style.display = "none";
+        MappingContent.style.display = "none";
     });
 
     StartButton.addEventListener('click', ()=> {
@@ -120,6 +123,7 @@ document.getElementById("closeBtn_8").addEventListener("click", function() {
         ContributorContent.style.display = "none";
         PortalContent.style.display = "none";
         MarketplaceContent.style.display = "none";
+        MappingContent.style.display = "none";
     });
 
     ReservoirButton.addEventListener('click', ()=> {
@@ -133,6 +137,7 @@ document.getElementById("closeBtn_8").addEventListener("click", function() {
         ContributorContent.style.display = "none";
         PortalContent.style.display = "none";
         MarketplaceContent.style.display = "none";
+        MappingContent.style.display = "none";
     });
 
     StreamweaverButton.addEventListener('click', ()=> {
@@ -146,6 +151,7 @@ document.getElementById("closeBtn_8").addEventListener("click", function() {
         ContributorContent.style.display = "none";
         PortalContent.style.display = "none";
         MarketplaceContent.style.display = "none";
+        MappingContent.style.display = "none";
     });
 
     YssLiveButton.addEventListener('click', ()=> {
@@ -159,6 +165,7 @@ document.getElementById("closeBtn_8").addEventListener("click", function() {
         ContributorContent.style.display = "none";
         PortalContent.style.display = "none";
         MarketplaceContent.style.display = "none";
+        MappingContent.style.display = "none";
 
 
     });
@@ -169,10 +176,9 @@ document.getElementById("closeBtn_8").addEventListener("click", function() {
         StreamweaverContent.style.display = "none";
         ReservoirContent.style.display = "none";
         StartContent.style.display = "none";
-        FaqContent.style.display = "none";
-        ContributorContent.style.display = "none";
         PortalContent.style.display = "block";
         MarketplaceContent.style.display = "none";
+        MappingContent.style.display = "none";
         document.getElementById('portal-content').scrollIntoView({ behavior: 'smooth', block:'start'});
     });
 
@@ -186,6 +192,7 @@ document.getElementById("closeBtn_8").addEventListener("click", function() {
         ContributorContent.style.display = "none";
         PortalContent.style.display = "none";
         MarketplaceContent.style.display = "block";
+        MappingContent.style.display = "none";
         document.getElementById('marketplace-content').scrollIntoView({ behavior: 'smooth', block:'start'});
     });
     
@@ -200,6 +207,7 @@ document.getElementById("closeBtn_8").addEventListener("click", function() {
         document.getElementById('contributor-page').scrollIntoView({ behavior: 'smooth', block:'start' });
         PortalContent.style.display = "none";
         MarketplaceContent.style.display = "none";
+        MappingContent.style.display = "none";
     });
 
     FaqButton.addEventListener('click', ()=> {
@@ -213,7 +221,22 @@ document.getElementById("closeBtn_8").addEventListener("click", function() {
         document.getElementById('faq').scrollIntoView({ behavior: 'smooth', block:'start' });
         PortalContent.style.display = "none";
         MarketplaceContent.style.display = "none";
+        MappingContent.style.display = "none";
     });
+
+    MappingButton.addEventListener('click', ()=> {
+        aboutUsContent.style.display = "none";
+        YssLiveContent.style.display = "none"; 
+        StreamweaverContent.style.display = "none"; 
+        ReservoirContent.style.display = "none";
+        StartContent.style.display = "none";
+        FaqContent.style.display = "block"; 
+        ContributorContent.style.display = "none"; 
+        FaqContent.style.display = "none"; 
+        PortalContent.style.display = "none"; 
+        MarketplaceContent.style.disply = "none"; 
+        document.getElementById('mapping').scrollIntoView({ behavior: 'smooth', block:'start' });
+    })
     
 
 
@@ -254,7 +277,7 @@ document.getElementById("closeBtn_8").addEventListener("click", function() {
             yslcoverlay.style.display = 'none';
         });
     }
-    for (let i = 1; i <= 5; i++) {
+    for (let i = 1; i <= 6; i++) {
         handleClickYslc(`yslc-content-${i}`, `yslc-content-${i}-opened`);
     }
 
@@ -272,7 +295,7 @@ document.getElementById("closeBtn_8").addEventListener("click", function() {
             streamweaveroverlay.style.display = 'none';
         });
     }
-    for (let i = 1; i <= 4; i++) {
+    for (let i = 1; i <= 6; i++) {
         handleClickStreamweaver(`streamweaver-content-${i}`, `streamweaver-content-${i}-opened`);
     }
     
@@ -292,14 +315,14 @@ document.getElementById("closeBtn_8").addEventListener("click", function() {
         });
     }
     // Change increment ie: i <= x for how many nodes exist in the road map (x)
-    for (let i = 1; i <= 5; i++) {
+    for (let i = 1; i <= 6; i++) {
         handleClickReservoir(`reservoir-content-${i}`, `reservoir-content-${i}-opened`);
     }
 
     // For The Portal
-    const portaloverlay = document.getElementById('portal-content-overlay');
+    const portaloverlay = 
+    document.getElementById('portal-content-overlay');
     function handleClickPortal(buttonId, contentId) {
-
         const button = document.getElementById(buttonId);
         const content = document.getElementById(contentId);
         button.addEventListener('click', () => {
@@ -311,8 +334,7 @@ document.getElementById("closeBtn_8").addEventListener("click", function() {
             portaloverlay.style.display = 'none';
         });
     }
-    for (let i = 1; i <= 5; i++) {
-
+    for (let i = 1; i <= 6; i++) {
         handleClickPortal(`portal-content-${i}`, `portal-content-${i}-opened`);
     }
 
@@ -354,8 +376,6 @@ document.getElementById("closeBtn_8").addEventListener("click", function() {
         handleClickStart(`start-content-${i}`, `start-content-${i}-opened`);
     }
 
-    
-
 
 const videooverlay = document.getElementById('video-overlay');
 function handleClickVideo(buttonId, contentId) {
@@ -372,7 +392,26 @@ function handleClickVideo(buttonId, contentId) {
 }
 handleClickVideo('video-btn', `video-cnt`);
 
+//For Mapping
+const mappingoverlay = document.getElementById('mapping-content-overlay');
+    function handleClickMapping(buttonId, contentId) {
+        const button = document.getElementById(buttonId);
+        const content = document.getElementById(contentId);
+        button.addEventListener('click', () => {
+            content.style.display = content.style.display === 'none' ? 'block' : 'none';
+            mappingoverlay.style.display = mappingoverlay.style.display === 'none' ? 'block' : 'none';
+        });
+        mappingoverlay.addEventListener('click', () => {
+            content.style.display = 'none';
+            mappingoverlay.style.display = 'none';
+        });
+    }
+    for (let i = 1; i <= 6; i++) {
+        handleClickMapping(`mapping-content-${i}`, `mapping-content-${i}-opened`);
+    }
+
 
 function scrollToTop() {
     document.getElementById('hero-page').scrollIntoView({ behavior: 'smooth', block:'start'});
 }
+
